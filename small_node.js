@@ -10,7 +10,7 @@ function printToScreen(word){
 
 // For Loops, While Loops
 function printArray(myarray){
-	
+
 	// I figure out how many items are in my array
 	var arraySize = myarray.length;
 
@@ -23,6 +23,7 @@ function printArray(myarray){
 	// for( var i =0; i < 10; i++)
 	for( var i = 0; i < arraySize; i++ )
 	{
+		i=0;
 			console.log("Value of array: "+ myarray[i]);
 			console.log("Value of i: " + i );
 	}
@@ -35,6 +36,22 @@ function printArray(myarray){
 	}
 }
 
+function fizzBuzz(){
+	for( var i = 0; i <= 30; i++ ){
+		var p = "";
+	  if (i % 3 == 0){
+		p = "fizz";
+		}
+		if (i % 5 == 0) {
+		p = p + "buzz";
+
+		}
+		if (p != ""){
+			console.log(p);
+		}
+	}
+}
 //printToScreen("sleep");
 //printToScreen("sleepo");
-printArray(["my","name","is","lea"]);
+//printArray(["my","name","is","lea"]);
+fizzBuzz();
