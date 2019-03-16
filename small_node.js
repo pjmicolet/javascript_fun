@@ -51,7 +51,14 @@ function fizzBuzz(){
 		}
 	}
 }
+function random(){
+	for ( var i = 0; i < 100; i++ ){
+var p = Math.floor(Math.random() * 100);
+	 console.log(p);
+ }
+}
 //printToScreen("sleep");
 //printToScreen("sleepo");
 //printArray(["my","name","is","lea"]);
-fizzBuzz();
+//fizzBuzz();
+random();
